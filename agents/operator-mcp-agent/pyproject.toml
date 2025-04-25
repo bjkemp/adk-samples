@@ -1,0 +1,24 @@
+[project]
+name = "operator-mcp-agent"
+version = "0.1.0"
+description = "Operator agent with MCP tool capabilities"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/google/adk-samples"
+
+[tool.adk]
+agent = "operator_mcp_agent.agent:root_agent"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
